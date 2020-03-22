@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="calc_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="calculator.html."><strong>Calculator</strong></a>
+            </li>
+        </ul>
+    </nav>
+    <h2>Free Online Calculator</h2>
+    <div class="container">
+        <div class="row calculatorUI">
+            <div class="col-md-4 border-primary">
+                <!-- main div for our calculator -->
+                <form>
+                <div class="row calculatorScreen">
+                    <input type="text" class="textBox" placeholder="Input 1"  >
+                </div>
+                <div class="row calculatorScreen">
+                    <input type="text" class="textBox" placeholder="Input 2">
+                </div>
+                <div>
+                <div class="row calculatorScreen">
+                    <input type="text" class="textBox" placeholder="Answer" readonly>
+                </div>
+                <div class="row calculatorkeys">   
+                    <div class="col"><button type="button" class="clearEntry btn btn-danger">CE</button></div>
+                    <div class="col"><button type="button" class="clear btn btn-info" ><-</button></div>
+                    <div class="col"><button type="button" class="operator btn btn-warning">%</button></div>
+                    <div class="col"><button type="button" class="operator btn btn-warning">/</button></div> 
+                </div>
+                <div class="row calculatorkeys">
+                    <div class="col"><button type="button" class="number btn btn-dark" >7</button></div>
+                    <div class="col"><button type="button" class="number btn btn-dark">8</button></div>
+                    <div class="col"><button type="button" class="number btn btn-dark">9</button></div>
+                    <div class="col"><button type="button" class="operator btn btn-warning">X</button></div>
+                </div>
+                <div class="row calculatorkeys">
+                    <div class="col"><button type="button" class="number btn btn-dark">4</button></div>
+                    <div class="col"><button type="button" class="number btn btn-dark">5</button></div>
+                    <div class="col"><button type="button" class="number btn btn-dark">6</button></div>
+                    <div class="col"><button type="button" class="operator btn btn-warning">-</button></div>
+                </div>
+                <div class="row calculatorkeys">
+                    <div class="col"><button type="button" class="number btn btn-dark">1</button></div>
+                    <div class="col"><button type="button" class="number btn btn-dark">2</button></div>
+                    <div class="col"><button type="button" class="number btn btn-dark">3</button></div>
+                    <div class="col"><button type="button" class="operator btn btn-warning">+</button></div>
+                </div>
+                <div class="row calculatorkeys">
+                    <div class="col"><button type="button" class="sign btn btn-info">+/-</button></div>
+                    <div class="col"><button type="button" class="number btn btn-dark">0</button></div>
+                    <div class="col"><button type="button" class="decimal btn btn-info">.</button></div>
+                    <div class="col"><button type="button" class="operator btn btn-warning">=</button></div>
+                </div>
+                </form>
+                <!-- end of main div -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
